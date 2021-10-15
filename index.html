@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,43 @@
   <title>Form Validation JS</title>
 </head>
 <body>
-  
-    
+  <main class="w-100">
+      <div class="container w-100">
+        <div class="form-container mx-auto text-center py-5">
+            <div class="form-header">
+                <h1 class="fw-bold">SIGN UP FORM</h1>
+                <p>all fields are required</p>
+            </div>
+            <form id="form" action="/" method="GET" class="row py-5 px-4">
+                <div class="col-12 mb-4 position-relative form-field">
+                    <input type="text" id="fname" name="fname" placeholder="First Name" class="w-100 p-4 form-input">
+                    <img src="images/icon-error.svg" class="error-icon" aria-label="Error Indicator" alt="">
+                   <p class="error-text w-100 emptyP mb-0">First name cannot be empty</p>
+                </div>
+                <div class="col-12 mb-4 position-relative form-field">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name" class="w-100 p-4 form-input">
+                    <img src="images/icon-error.svg" class="error-icon d-none" aria-label="Error Indicator" alt="">
+                    <p class="error-text w-100 d-none emptyP mb-0 ">last name cannot be empty</p>
+                </div>
+                <div class="col-12 mb-4 position-relative form-field">
+                    <input type="email" id="email" name="email" placeholder="Email Address" class="w-100 form-input p-4">
+                    <img src="images/icon-error.svg" class="error-icon" aria-label="Error Indicator" alt="">
+                    <p class="error-text w-100  emptyP mb-0">Email cannot be empty</p>
+                    <p id="emailText" class="error-text w-100 d-none">Please enter a valid email</p>
+                </div>
+                <div class="col-12 mb-4 position-relative form-field">
+                    <input type="text" id="password" name="password" placeholder="Password" class="w-100 form-input p-4">
+                    <img src="images/icon-error.svg" class="error-icon d-none" aria-label="Error Indicator" alt="">
+                    <p class="error-text w-100 d-none emptyP mb-0">Password cannot be empty</p>
+                </div>
+                <div class="col-12 mb-3">
+                    <button id="submitBtn" class="w-100 btn btn-green">CLAIM YOUR FREE TRIAL</button>
+                </div> 
+            </form>  
+        </div>  
+      </div>
+  </main>
+
 
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
