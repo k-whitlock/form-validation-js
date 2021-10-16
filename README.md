@@ -1,6 +1,6 @@
 # Form Validation JS
 ### This is a sign up form using client side validation mainly with javascript.
-![Form Validation Screenshot](![Uploading form-validation-screenshot.PNG…]())
+![form-validation-screenshot](https://user-images.githubusercontent.com/54340506/137568156-3fb01aa8-f95d-44bd-ad2c-10c491341610.PNG)
 # Deployment
 
 ### 
