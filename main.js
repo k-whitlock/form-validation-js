@@ -13,8 +13,24 @@ const emailRegex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkEmptyFields();
+    validateEmail();
 
 })
+
+
+// validate email
+function validateEmail() {
+    let emailValue = emailInput.value;
+    const emailIcon = emailInput.nextElementSibling;
+
+    if(!emailRegex.test(emailValue) && emailValue != "") {
+        emailIcon.classList.remove('d-none');
+        emailText.classList.remove('d-none');
+    } else {
+       emailText.classList.add('d-none');
+    }
+}
+
 
 // if input is empty add class input error to the input element and remove d-none from img and p element
 function checkEmptyFields() {
@@ -28,3 +44,5 @@ function checkEmptyFields() {
         }
     }
 }
+
+
