@@ -11,7 +11,7 @@
     --dark-grey: #111827;
    }
 
-   /* GENERAL
+/* GENERAL
 ============================================= */
 
 * {
@@ -39,6 +39,32 @@ body {
 
 }
 
+
+/* FONT SIZE
+============================================= */
+.terms-text {
+    font-size: 1rem;
+}
+
+.form-title {
+    font-size: 2.4rem;
+}
+
+.form-description {
+    font-size: 1.4rem
+}
+
+/* COLORS
+============================================= */
+.fc-red {
+    color: var(--red);
+}
+
+
+
+/* FORM
+============================================= */
+
 .form-container {
     background-color: #f7f7f7;
     max-width: 480px;
@@ -54,6 +80,16 @@ body {
     border: 1px solid #dedede;
     outline: none;
    
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: grey;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+.form-input:focus {
+    border-color: var(--dark-grey);
 }
 
 .error-icon {
@@ -87,4 +123,20 @@ body {
 
 .btn-green:active {
     opacity: 0.6;
+}
+
+/* MEDIA QUERIES
+============================================= */
+@media (min-width: 576px) { 
+    .terms-text {
+        font-size: 1.2rem;
+    }
+
+    .form-title {
+        font-size: 3.2rem;
+    }
+    
+    .form-description {
+        font-size: 1.6rem
+    }
 }

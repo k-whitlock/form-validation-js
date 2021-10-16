@@ -22,34 +22,35 @@
       <div class="container w-100">
         <div class="form-container mx-auto text-center py-5">
             <div class="form-header">
-                <h1 class="fw-bold">SIGN UP FORM</h1>
-                <p>all fields are required</p>
+                <h1 class="fw-bold form-title">SIGN UP FORM</h1>
+                <p class="form-description">all fields are required</p>
             </div>
             <form id="form" action="/" method="GET" class="row py-5 px-4">
                 <div class="col-12 mb-4 position-relative form-field">
                     <input type="text" id="fname" name="fname" placeholder="First Name" class="w-100 p-4 form-input">
-                    <img src="images/icon-error.svg" class="error-icon" aria-label="Error Indicator" alt="">
-                   <p class="error-text w-100 emptyP mb-0">First name cannot be empty</p>
+                    <img src="images/icon-error.svg" class="error-icon d-none" aria-label="Error Indicator" alt="">
+                   <p class="error-text w-100 emptyP mb-0 d-none">First name cannot be empty</p>
                 </div>
                 <div class="col-12 mb-4 position-relative form-field">
                     <input type="text" id="lname" name="lname" placeholder="Last Name" class="w-100 p-4 form-input">
                     <img src="images/icon-error.svg" class="error-icon d-none" aria-label="Error Indicator" alt="">
-                    <p class="error-text w-100 d-none emptyP mb-0 ">last name cannot be empty</p>
+                    <p class="error-text w-100 emptyP mb-0 d-none">last name cannot be empty</p>
                 </div>
                 <div class="col-12 mb-4 position-relative form-field">
                     <input type="email" id="email" name="email" placeholder="Email Address" class="w-100 form-input p-4">
-                    <img src="images/icon-error.svg" class="error-icon" aria-label="Error Indicator" alt="">
-                    <p class="error-text w-100  emptyP mb-0">Email cannot be empty</p>
+                    <img src="images/icon-error.svg" class="error-icon d-none" aria-label="Error Indicator" alt="">
+                    <p class="error-text w-100  emptyP mb-0 d-none">Email cannot be empty</p>
                     <p id="emailText" class="error-text w-100 d-none">Please enter a valid email</p>
                 </div>
                 <div class="col-12 mb-4 position-relative form-field">
                     <input type="text" id="password" name="password" placeholder="Password" class="w-100 form-input p-4">
                     <img src="images/icon-error.svg" class="error-icon d-none" aria-label="Error Indicator" alt="">
-                    <p class="error-text w-100 d-none emptyP mb-0">Password cannot be empty</p>
+                    <p class="error-text w-100 emptyP mb-0 d-none">Password cannot be empty</p>
                 </div>
                 <div class="col-12 mb-3">
                     <button id="submitBtn" class="w-100 btn btn-green">CLAIM YOUR FREE TRIAL</button>
                 </div> 
+                <small class="terms-text text-center">By clicking the button you are agreeing to our <span class="fc-red">Terms and Services</span> </small>
             </form>  
         </div>  
       </div>
