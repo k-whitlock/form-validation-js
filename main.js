@@ -9,7 +9,7 @@ const emailInput = document.querySelector('#email');
 const emailText = document.querySelector('#emailText');
 const emailRegex =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-// EVENT LISTENER
+// Event listener
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     checkEmptyFields();
@@ -18,7 +18,7 @@ form.addEventListener('submit', (e) => {
 })
 
 
-// validate email
+// Validate email
 function validateEmail() {
     let emailValue = emailInput.value;
     const emailIcon = emailInput.nextElementSibling;
@@ -32,7 +32,7 @@ function validateEmail() {
 }
 
 
-// if input is empty add class input error to the input element and remove d-none from img and p element
+// If input is empty show error icon and error text
 function checkEmptyFields() {
     for(let i = 0; i < input.length; i++) {
         if(input[i].value  === "") {
