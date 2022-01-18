@@ -6,7 +6,7 @@ https://form-validation-js-beryl.vercel.app/
 ### 
 # Built With 
 - Bootstrap 5
-- vanilla JS
+- Javascript
 # Authors
 - k-whitlock 
 
